@@ -1,0 +1,220 @@
+<style>
+	.onClickTextOverImage{
+	  	width:359px;
+	  	height:359px;
+	  	background-size:cover;
+	  	display:inline-block;
+	  	border-radius:16px;
+	  	margin:4px;
+	  	box-shadow:0 0 16px rgba(0,0,0,0.5);
+	  	cursor:pointer;
+	  	position:relative;
+	  	font-family: 'Century Gothic';
+	  	font-size: 18px;
+	}
+
+	.onClickTextOverImage div{
+  		position:absolute;
+  		color:#fff;
+  		padding:8px;
+  		top:0;
+  		bottom:0;
+  		right:0;
+  		left:0;
+  		background-color:rgba(0,0,0,0.85);
+  		border-radius:16px;
+  		padding-top:35%;
+  		text-align:center;
+  		opacity:0;
+  		visibility:hidden;
+  		transition:.3s;
+	}
+
+	.onClickTextOverImage.show div{
+  		opacity:1;
+  		padding-top:5%;
+  		visibility:visible;
+	}
+
+	h6 { 
+	   position: absolute; 
+	   top: 220px; /*location of title on pictures*/
+	   left: 0; 
+	   width: 100%; 
+	   font-size: 25px;
+	   color: white; 
+	   letter-spacing: -1px;  
+	   background: rgba(191, 105, 105, 0.85);
+	   padding: 10px; 
+	}
+	
+	.details {
+		border-radius: 10px;
+		background: #c9ade6;
+		color: black;
+		text-align: left;
+		padding: 4px;
+		margin: 1.5px;
+		display: block;
+		float: left;
+	}
+
+	.mini {
+		display: block;
+		margin-bottom: .75em;
+		margin-top: 0em; 
+	}	
+</style>
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="ExternalCSS.CSS"/>
+	<link rel="shortcut icon" href="HM.png"/>
+</head>
+<body>
+	<div style="padding: .1px; margin: 0px; background-color: rgba(191, 105, 105, 0.7)">
+		<h1><a href="index.html" style="color: white; text-decoration: none">Hanna Mitschke</a></h1> 
+	</div>
+	<ul>
+  		<li><a href="index.html">Home</a></li>
+  		<li><a href="AboutMe.html">About Me</a></li>
+  		<li><a class="active" href="Portfolio.html">Portfolio</a></li>
+  		<li><a href="Service.html">Service</a></li>
+  		<li><a href="Resume.html">Resume</a></li>
+  		<li><a href="ContactMe.html">Contact Me</a></li>
+	</ul>
+	<div style="border-radius: 5px; padding: 10px; margin-top: 10px; margin-left: 0px; margin-right: 0px; background-color: rgba(50, 50, 50, 0.9);">
+		<h2>Portfolio</h2>
+		<p>My computer science interests include software engineering, machine learning, human-computer interaction, computer vision, full stack web development, and data science.</p>
+		<br>
+		
+		<h3><b>Senior Year ('20-'21)</b></h3>
+		<div class="onClickTextOverImage" style="background-image:url(projects/tumble.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Tumble">
+			<h6>Tumble</h6>
+			<div><span class="details">Senior Capstone Design</span><span class="details">Group Project (5)</span><span class="details">Java</span><span class="details">Android Studio</span><br><br><br><br><span class="mini"></span>To see a demo video of our app, click <a class="link" href="https://drive.google.com/file/d/1tga0JUPNxfu83SwO_Vsew7sjuzwqrcUd/view?usp=sharing">here</a>.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/grade_calc.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Grade Calculator">
+			<h6>Grade Calculator</h6>
+			<div><span class="details">Introduction to Computer Science Concepts and Programming (TA)</span><span class="details">Solo Project</span><span class="details">HTML/CSS</span><span class="details">JavaScript</span><br><br><br></div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/weekly_event_calendar.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Weekly Org Event Calender">
+			<h6>Weekly Org Event Calender</h6>
+			<div><span class="details">Human-Computer Interaction</span><span class="details">Group Project (4)</span><span class="details"><a class="link" href="https://www.figma.com/">Figma</a></span><br><br><br>The process we went through was determining a problem, creating requirements, choosing the best design, creating a prototype, and evaluating it.  We determined that social isolation was becoming a larger problem among students due to COVID-19.  Since student orgs are a big way that students connect, we created a prototype of a weekly TAMU student organization event calender to help facilitate connections.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/coffee_data.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Coffee Data Analysis">
+			<h6>Coffee Data Analysis</h6>
+			<div><span class="details">Principles of Data Science</span><span class="details">Group Project (3)</span><span class="details">Python</span><br><br><br>We went though the data science cycle using a Arabica coffee dataset that had features like coffee bean data, farm data, various scores of qualities like flavor, and a total quality score.  After we cleaned our data, our goal was to find which characteristics lead to the highest quality coffee and we did this by doing exploratory data analysis and doing dimensionality reduction with t-SNE.  See our dataset and final notebook <a class="link" href="https://github.com/elizabethho/Brew-ti-ful-Data">here</a>.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/random_student_generator.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Random Student Generator">
+			<h6>Random Student Generator</h6>
+			<div><span class="details">Introduction to Computer Science Concepts and Programming (TA)</span><span class="details">Solo Project</span><span class="details">Python</span><span class="details">Jupyter Notebook</span><br><br><br><br><br><span class="mini"></span>As a way to keep more students engaged during online lectures, I created a Python notebook that creates a GUI to allow the professor to either randomly generate a student's name and picture, or to hand select a student. The professor can then call on this person and then award them a participation point if they respond.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/attendance_tracker.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Attendance Tracker">
+			<h6>Zoom Attendance Tracker</h6>
+			<div><span class="details">Introduction to Computer Science Concepts and Programming (TA)</span><span class="details">Solo Project</span><span class="details">Python</span><br><br><br><br>Since we wanted a way to keep track of who attended online lecture, someone wrote a script that uses a student roster and Zoom attendance file to output whether each student was present for an online Zoom meeting for long enough.  In order to check if the students were being attentive, I added the ability to use the Zoom poll report to take away credit if they didn't answer the poll.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/codenames.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Codenames">
+			<h6>Codenames</h6>
+			<div><span class="details">For Fun</span><span class="details">Solo Project</span><span class="details">HTML/CSS</span><span class="details">JavaScript</span><br><br><br><a class="link" href="https://en.wikipedia.org/wiki/Codenames_(board_game)">Codenames</a> is one of my favorite board games to play with my friends and family, so I decided to recreate the popular game to give me a chance to practice JavaScript.  This simple version allows the game to be played with a computer and means that I could even add new words to the game.  See my GitHub repo <a class="link" href="https://github.com/HannaMitschke/Codenames">here</a>.</div>
+		</div>
+		<br><br>
+		
+		<h3><b>Junior Year ('19-'20)</b></h3>
+		<div class="onClickTextOverImage" style="background-image:url(projects/peer_teacher_display.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Peer Teacher Display">
+			<h6>Peer Teacher Display</h6>
+			<div><span class="details">Software Engineering</span><span class="details">Group Project (6)</span><span class="details">Ruby</span><span class="details">Rails</span><br><br><br>Using the Ruby on Rails framework, we created a SaaS web app for Dr. Teresa Leyk that shows the currently working computer science peer teachers at TAMU.  It was designed to be shown on the display in Peer Teacher Central (where peer teachers have office hours) so that students there know who to ask for help.  Admins can add, edit, and delete peer teachers from the app as well.  We used GitHub for version control.  See the web app <a class="link" href="https://tamu-pt-display.herokuapp.com/">here</a>.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/the_burning_bush.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="The Burning Bush">
+			<h6>The Burning Bush</h6>
+			<div><span class="details">Information Storage and Retrieval</span><span class="details">Group Project (3)</span><span class="details">Python</span><br><br><br>This Python project was a search engine for the Bible and the Quran, and it also allowed for a comparative search between the two.  We utilized various techniques we learned in class such as stemming, ranking with Okapi BM25, indexing, stop word removal, and corpus normalization.  The GUI for this project was made using Tkinter. We used GitHub for version control and the repo for this project can be found <a class="link" href="https://github.com/lwcreel/BurningBush">here</a>.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/text_classification.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Text Classification">
+			<h6>Text Classification</h6>
+			<div><span class="details">Information Storage and Retrieval</span><span class="details">Solo Project</span><span class="details">Python</span><br><br><br>Text classification is used to find which class to classify a document in and supervised learning involves using a training set of documents with known classes, a fixed set of classes, and a new document that needs to be classified.  The three methods that were done in this Python project were KNN (takes majority class of k nearest neighbors), Rocchio (uses centroids), and Naïve Bayes (based on Bayes rule and uses bag of words representation).</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/calculator.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Accessible Calculator">
+			<h6>Accessible Calculator</h6>
+			<div><span class="details">Programming Studio</span><span class="details">Group Project (4)</span><span class="details">C#</span><span class="details">Unity</span><br><br><br>We made a calculator using Unity and C# with certain accessibility features for people that have hand motor disabilities.  Instead of clicking the buttons to use the calculator, the user just has to hold the mouse cursor over the button they want to press, an animation plays to let the user know how close they are to a button click, and then after a couple of seconds, a click is registered and a sound is played.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/dbms.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="DBMS">
+			<h6>DBMS</h6>
+			<div><span class="details">Programming Studio</span><span class="details">Group Project (4)</span><span class="details">Java</span><span class="details">JavaFX</span><br><br><br>We had to make a Database Management System in Java to store information from TMDb and create a GUI for processing the movie data.  We used ANTLR to create grammar to parse SQL commands.  I worked mostly on the GUI, which I did in JavaFX using Scene Builder.  It had various queries that the user could interact with and worked by generating SQL code that was then read and parsed to call functions in our Java classes.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/rev_run.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Reveille Run">
+			<h6>Reveille Run</h6>
+			<div><span class="details">Programming Studio</span><span class="details">Group Project (5)</span><span class="details">C#</span><span class="details">Unity</span><br><br><br>We took a Super Mario Bros clone that someone had made and edited it to include many accessibility features such as captions, voice overs, different game speed options, a pause menu, a tutorial level, and a variety of difficulties.  We also re-skinned the game so that it was A&M themed, with Reveille being the main character.  We worked on this project using Unity and C#, along with GitHub for version control.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/shell.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="UNIX Shell">
+			<h6>UNIX Shell</h6>
+			<div><span class="details">Introduction to Computer Systems</span><span class="details">Solo Project</span><span class="details">C++</span><span class="details">C</span><br><br><br>Using some provided code, I created a simple shell in C++ that implemented some of the functionality of Bash.  Some of its features included: prompt for user input on command line, parse user input, execute commands like a shell would (using fork and exec), input/output redirection from/to a file, pipe output of one command to input of another, navigate directories, and run foreground and background processes.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/buddy_allocator.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Buddy Allocator">
+			<h6>Buddy Allocator</h6>
+			<div><span class="details">Introduction to Computer Systems</span><span class="details">Solo Project</span><span class="details">C++</span><span class="details">C</span><br><br><br>Using starter code, I created a memory allocator in C++ that used the buddy system memory allocation scheme to allocate/free physical memory.  In this scheme, the size of the memory blocks are in powers of two and when memory is requested, the blocks are split in half until the smallest block that can still fit the request is filled.  When memory is allocated and blocks are split, buddies are created, and when memory is freed, buddies get merged.</div>
+		</div>
+		<br><br>
+		
+		<h3><b>Sophomore Year ('18-'19)</b></h3>
+		<div class="onClickTextOverImage" style="background-image:url(projects/assembler.jpg") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Assembler">
+			<h6>Assembler</h6>
+			<div><span class="details">Computer Organization</span><span class="details">Solo Project</span><span class="details">C++</span><br><br><br>I made an assembler program in C++ that translated the low-level symbolic Hack assembly language into binary as a part of the <a class="link" href="https://www.nand2tetris.org">Nand to Tetris</a> course.  I also built a virtual computer system starting from elementary logic gates using a Hardware Description Language as a part of this course.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/javafit.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="JavaFit">
+			<h6>JavaFit</h6>
+			<div><span class="details">Programming Languages</span><span class="details">Solo Project</span><span class="details">Java</span><br><br><br>As a part of this small project, I extended the functionality of some provided code to make a workout app using Java and Java Swing.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/data_structures.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Data Structures">
+			<h6>Data Structures</h6>
+			<div><span class="details">Data Structures and Algorithms</span><span class="details">Solo Project</span><span class="details">C++</span><br><br><br>I created some basic data structures throughout the semester in C++, utilizing object-oriented programming to make them. Some of these included a matrix, binary search tree, skip list, graph, and my favorite, a doubly linked list.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/tamuhack.jpg") onmouseover="hovered(this)" onmouseout="normal(this)" alt="TAMUHack 2019">
+			<h6>TAMUHack 2019</h6>
+			<div><span class="details">For Fun</span><span class="details">Group Project (4)</span><span class="details">HTML/CSS</span><span class="details">JavaScript</span><br><br><br>I participated in <a class="link" href="https://tamuhack.com">TAMUHack</a> 2019 and was exposed to JavaScript for the first time.  During this hackathon, we worked on a web application that would serve as a virtual line, and I and another teammate focused on the front-end.  This was before I had learned anything about HTML/CSS, so we had to self-teach ourselves a lot of the information and I managed to learn quite a bit.  This inspired me to learn some HTML/CSS on my own later.</div>
+		</div>
+		<br><br>
+
+		<h3><b>Freshman Year ('17-'18)</b></h3>
+		<div class="onClickTextOverImage" style="background-image:url(projects/marble_sorter.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Marble Sorter">
+			<h6>Marble Sorter</h6>
+			<div><span class="details">Foundations of Engineering</span><span class="details">Group Project (8)</span><span class="details">LabVIEW</span><br><br><br>We had to make a device out of household materials, like cardboard and duct tape, and a LEGO Mindstorms EV3 kit to sort marbles based on color and size.  It was programmed using LabVIEW and worked by reading the RGB values of the marbles with a color sensor.  I was the team leader of my group and the lead programmer.</div>
+		</div>
+		<div class="onClickTextOverImage" style="background-image:url(projects/matlab_project.png") onmouseover="hovered(this)" onmouseout="normal(this)" alt="Best Fit">
+			<h6>Best Fit</h6>
+			<div><span class="details">Foundations of Engineering</span><span class="details">Solo Project</span><span class="details">MATLAB</span><br><br><br>This MATLAB project involved making a GUI for a user to input data points and it would allow them to see the data plotted on various scales.  The user could also select a fit, such as exponential, and it would attempt to fit the data to the selected option.</div>
+		</div>
+	</div>
+</body>
+
+<!--JavaScript-->
+<script> 
+   	var textOverImages = document.getElementsByClassName("onClickTextOverImage");
+	var previousTextOverImage;
+	for (var i = 0; i < textOverImages.length; i++) {
+ 		textOverImages[i].onclick = function() {
+    		var classes = this.classList;
+    		if (classes.contains("show")) {
+      			classes.remove("show");
+    		} else {
+      			if (previousTextOverImage != null)
+       				previousTextOverImage.classList.remove("show");
+      			previousTextOverImage = this;
+      			classes.add("show");
+    		}
+  		}
+  	}
+
+	function stopPropagation(event){
+  		event.stopPropagation();
+	}
+
+	function hovered(x) {
+  		if (!x.classList.contains("show"))
+			x.style.border= "7px solid #ffff80";	
+	}
+
+	function normal(x) {
+		x.style.border= "none";
+	}
+</script>

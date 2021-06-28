@@ -1,0 +1,151 @@
+ul { /*navigation bar from: https://www.w3schools.com/css/css_navbar.asp*/
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #404040; /*gray*/
+}
+li { /*tabs have lines between them*/
+	float: left;
+	border-right: 1px solid #bbb;
+}
+li:last-child {
+	border-right: none;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+	font-family: Century Gothic;
+	font-size: 20px;
+}
+li a:hover:not(.active) { /*change the color of tab if hovered over*/
+ 	background-color: #ffff80; /*yellow*/
+ 	color: black;
+}
+.active { /*tab of current page is a different color*/
+	background-color: #afd7e4; /*blue*/
+	color: black;
+}
+h1 {
+	font-family: 'Century Gothic';
+	font-variant: small-caps;
+	font-size: 85px;
+	text-align: center;
+	color: white;
+}
+h2 {
+	color: white;
+	font-family: 'Century Gothic';
+	font-weight: 500;
+	margin: 5px;
+}
+h3 {
+	color: white;
+	font-family: 'Century Gothic';
+	font-weight: 500;
+	margin: 5px;
+	font-size: 1.35em;
+}
+p { 
+	font-family: 'Century Gothic';
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	color: white;
+	margin: 5px
+}
+body {
+	background-image: url("backgroundimage.jpg");
+}
+a.link { /*links are yellow and bold*/
+	color: #ffff80;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.link2 { /*links are blue and bold*/
+	color: #afd7e4;
+	text-decoration: none;
+	font-weight: bold;
+}
+.link:hover { /*make links underline when hovered over*/
+	text-decoration: underline;
+}
+.link2:hover { /*make links underline when hovered over*/
+	text-decoration: underline;
+}
+img {
+	color:white;
+	font-family: 'Century Gothic';
+}
+img.purple {
+   border: 5px dashed #c9ade6;
+}
+img.green {
+   border: 5px dashed #ade6ad;
+}
+img.pink {
+   border: 5px dashed rgb(236, 148, 154);
+}
+img.blue {
+	border: 5px dashed #afd7e4;
+}
+/*for contact me page*/
+.icon {
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+.icon:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+/*for portfolio  page (no longer used)*/
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%; /*change if add another box on same row*/
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #404040; /*gray*/
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+  border: 1px solid #404040; /*gray*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
